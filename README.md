@@ -8,7 +8,9 @@
 |----------------|---------|-------------|
 | name           | string  | null: false |
 | personality_id | integer | null: false |
-| race_num       | string  | null: false |
-| individual_num | string  | null: false |
-| effort_num     | string  | null: false |
+| race_num       | integer | null: false |
+| individual_num | integer | null: false |
+| effort_num     | integer | null: false |
+| change_num     | integer | null: false |
+| ability_id     | integer | null: false |
 | tool_id        | integer | null: false |
