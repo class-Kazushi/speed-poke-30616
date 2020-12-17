@@ -1,0 +1,2 @@
+class Calclation < ApplicationRecord
+end
