@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_12_18_023657) do
     t.integer "change_num", null: false
     t.integer "ability_id", null: false
     t.integer "tool_id", null: false
+    t.integer "status_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

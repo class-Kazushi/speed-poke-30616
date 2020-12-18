@@ -9,6 +9,7 @@ class CreateCalculations < ActiveRecord::Migration[6.0]
       t.integer :change_num,     null: false
       t.integer :ability_id,     null: false
       t.integer :tool_id,        null: false
+      t.integer :status_id,      null: false
       t.timestamps
     end
   end
