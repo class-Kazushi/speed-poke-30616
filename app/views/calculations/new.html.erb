@@ -16,7 +16,7 @@
 
       <div class="calculation-personal">
         <%= f.label :"性格補正" %><br />
-        <%= f.text_field :personality_id, autofocus: true, autocomplete: "personality_id", class: "form-control  personal-form" %>
+        <%= f.collection_select(:personality_id, Personality.all, :id, :name, {}, {class: "form-control  personal-form"}) %>
       </div>
 
       <div class="calculation-individual">
