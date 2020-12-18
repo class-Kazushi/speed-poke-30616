@@ -44,6 +44,11 @@
         <%= f.collection_select(:tool_id, Tool.all, :id, :name, {}, {class: "form-control  tool-form"}) %>
       </div>
 
+      <div class="calculation-status">
+        <%= f.label :"フィールド・状態異常" %><br />
+        <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class: "form-control  status-form"}) %>
+      </div>
+
       <div class="calculation-submit">
         <%= f.submit "計算する", class: "btn btn-primary calculation-button" %>
       </div>

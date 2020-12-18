@@ -3,6 +3,7 @@ class Calculation < ApplicationRecord
   belongs_to :personality
   belongs_to :ability
   belongs_to :tool
+  belongs_to :status
 
   with_options presence: true do
     validates :name, length: { maximum: 6 }, format: { with: /\A[ァ-ヶー－]+\z/ }
@@ -13,5 +14,6 @@ class Calculation < ApplicationRecord
     validates :change_num
     validates :ability_id, numericality: { other_than: 1 }
     validates :tool_id, numericality: { other_than: 1 }
+    validates :status_id, numericality: { other_than: 1 }
   end
 end
