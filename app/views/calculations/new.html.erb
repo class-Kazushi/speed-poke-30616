@@ -1,1 +1,53 @@
 <h1>ポケモン素早さ実数値計算</h1>
+
+<div class="form-group new-form">
+  <%= form_with model: @calculatin, class: 'new-request', local: true do |f| %>
+
+    <div class="new-input">
+      <div class="calculation-poke">
+        <%= f.label :"ポケモン名" %><br />
+        <%= f.text_field :name, autofocus: true, autocomplete: "name", class: "form-control  name-form" %>
+      </div>
+
+      <div class="calculation-race">
+        <%= f.label :"種族値" %><br />
+        <%= f.number_field :race_num, autofocus: true, autocomplete: "race_num", class: "form-control  race-form" %>
+      </div>
+
+      <div class="calculation-personal">
+        <%= f.label :"性格補正" %><br />
+        <%= f.text_field :personality_id, autofocus: true, autocomplete: "personality_id", class: "form-control  personal-form" %>
+      </div>
+
+      <div class="calculation-individual">
+        <%= f.label :"個体値" %><br />
+        <%= f.number_field :individual_num, autofocus: true, autocomplete: "indivisual_num", class: "form-control  indivisual-form" %>
+      </div>
+
+      <div class="calculation-effort">
+        <%= f.label :"努力値" %><br />
+        <%= f.number_field :effort_num, autofocus: true, autocomplete: "effort_num", class: "form-control  effort-form" %>
+      </div>
+
+      <div class="calculation-change">
+        <%= f.label :"ランク補正" %><br />
+        <%= f.number_field :change_num, autofocus: true, autocomplete: "change_num", class: "form-control  change-form" %>
+      </div>
+
+      <div class="calculation-ability">
+        <%= f.label :"特性補正" %><br />
+        <%= f.text_field :ability_id, autofocus: true, autocomplete: "ability_id", class: "form-control  ability-form" %>
+      </div>
+
+      <div class="calculation-tool">
+        <%= f.label :"道具補正" %><br />
+        <%= f.text_field :tool_id, autofocus: true, autocomplete: "tool_id", class: "form-control  tool-form" %>
+      </div>
+
+      <div class="calculation-submit">
+        <%= f.submit "計算する", class: "btn btn-primary calculation-button" %>
+      </div>
+    </div>
+  <% end %>
+
+</div>
