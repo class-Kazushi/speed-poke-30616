@@ -1,6 +1,6 @@
-class CreateCalclations < ActiveRecord::Migration[6.0]
+class CreateCalculations < ActiveRecord::Migration[6.0]
   def change
-    create_table :calclations do |t|
+    create_table :calculations do |t|
       t.string :name,            null: false
       t.integer :personality_id, null: false
       t.integer :race_num,       null: false

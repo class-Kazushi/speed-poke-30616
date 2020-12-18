@@ -1,4 +1,4 @@
-class Calclation < ApplicationRecord
+class Calculation < ApplicationRecord
   with_options presence: true do
     validates :name, length: { maximum: 6 }, format: { with: /\A[ァ-ヶー－]+\z/ }
     validates :personality_id
