@@ -41,7 +41,7 @@
 
       <div class="calculation-tool">
         <%= f.label :"道具補正" %><br />
-        <%= f.text_field :tool_id, autofocus: true, autocomplete: "tool_id", class: "form-control  tool-form" %>
+        <%= f.collection_select(:tool_id, Tool.all, :id, :name, {}, {class: "form-control  tool-form"}) %>
       </div>
 
       <div class="calculation-submit">
