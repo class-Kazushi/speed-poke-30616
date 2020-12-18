@@ -8,10 +8,10 @@ class Calculation < ApplicationRecord
   with_options presence: true do
     validates :name, length: { maximum: 6 }, format: { with: /\A[ァ-ヶー－]+\z/ }
     validates :personality_id, numericality: { other_than: 1 }
-    validates :race_num
-    validates :individual_num
-    validates :effort_num
-    validates :change_num
+    validates :race_num, numericality: { greater_than_or_equal_to: 5, less_than_or_equal_to: 200 }
+    validates :individual_num, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 31 }
+    validates :effort_num, numericality: { greater_than_or_equal_to: 0, less_than_or_equal_to: 252 }
+    validates :change_num, numericality: { greater_than_or_equal_to: -6, less_than_or_equal_to: 6 }
     validates :ability_id, numericality: { other_than: 1 }
     validates :tool_id, numericality: { other_than: 1 }
     validates :status_id, numericality: { other_than: 1 }

@@ -21,17 +21,17 @@
 
       <div class="calculation-individual">
         <%= f.label :"個体値" %><br />
-        <%= f.number_field :individual_num, autofocus: true, autocomplete: "indivisual_num", class: "form-control  indivisual-form" %>
+        <%= f.number_field :individual_num, value: 31, autofocus: true, autocomplete: "indivisual_num", class: "form-control  indivisual-form" %>
       </div>
 
       <div class="calculation-effort">
         <%= f.label :"努力値" %><br />
-        <%= f.number_field :effort_num, autofocus: true, autocomplete: "effort_num", class: "form-control  effort-form" %>
+        <%= f.number_field :effort_num, value: 252, autofocus: true, autocomplete: "effort_num", class: "form-control  effort-form" %>
       </div>
 
       <div class="calculation-change">
         <%= f.label :"ランク補正" %><br />
-        <%= f.number_field :change_num, autofocus: true, autocomplete: "change_num", class: "form-control  change-form" %>
+        <%= f.number_field :change_num, value: 0, autofocus: true, autocomplete: "change_num", class: "form-control  change-form" %>
       </div>
 
       <div class="calculation-ability">
