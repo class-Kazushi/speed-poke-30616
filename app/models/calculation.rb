@@ -4,6 +4,7 @@ class Calculation < ApplicationRecord
   belongs_to :ability
   belongs_to :tool
   belongs_to :status
+  belongs_to :change
 
   with_options presence: true do
     validates :name, length: { maximum: 6 }, format: { with: /\A[ァ-ヶー－]+\z/ }

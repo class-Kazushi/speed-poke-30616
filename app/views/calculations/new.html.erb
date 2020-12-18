@@ -31,7 +31,7 @@
 
       <div class="calculation-change">
         <%= f.label :"ランク補正" %><br />
-        <%= f.number_field :change_num, value: 0, autofocus: true, autocomplete: "change_num", class: "form-control  change-form" %>
+        <%= f.collection_select(:change_id, Change.all, :id, :name, {}, {class: "form-control  change-form"}) %>
       </div>
 
       <div class="calculation-ability">
