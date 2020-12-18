@@ -1,6 +1,7 @@
 class Calculation < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :personality
+  belongs_to :ability
 
   with_options presence: true do
     validates :name, length: { maximum: 6 }, format: { with: /\A[ァ-ヶー－]+\z/ }

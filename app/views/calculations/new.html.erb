@@ -36,7 +36,7 @@
 
       <div class="calculation-ability">
         <%= f.label :"特性補正" %><br />
-        <%= f.text_field :ability_id, autofocus: true, autocomplete: "ability_id", class: "form-control  ability-form" %>
+        <%= f.collection_select(:ability_id, Ability.all, :id, :name, {}, {class: "form-control  ability-form"}) %>
       </div>
 
       <div class="calculation-tool">
